@@ -1,3 +1,177 @@
 .App {
   text-align: center;
 }
+
+.falsoHeader {
+  padding-left: 50px;
+  padding-right: 80px;
+  background-color: rgb(168, 226, 93);
+  height: 100px;
+  display: flex;
+  justify-content:flex-end;
+  border-bottom: solid 2px black;
+}
+
+header{
+  position:fixed;
+}
+
+main {
+  background-color: rgb(255, 248, 225);
+}
+.cabezalBarru1{
+  margin-left:30px;
+  margin-top:40px;
+  width:40%;
+}
+.cabezal {
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+}
+
+.cabezal:hover {
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(228, 136, 31);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a.cabezal {
+  color: white;
+  text-decoration: none;
+}
+
+.cartaProyecto {
+  display: flex;
+  justify-content: center;
+}
+
+.cartaTitulo {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 700px;
+}
+
+.contHabilidades {
+  display:flex;
+  justify-content:space-around;
+  margin-top: -47px;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  background-color: rgb(168, 226, 93);
+  border-radius: 50px;
+
+}
+
+.cartaHabilidad{
+  border-radius: 30px;
+  background-color: rgb(71, 52, 83);
+  width: 40%;
+  margin: 20px;
+  margin-top: -27px;
+  padding: 20px 30px 20px 30px;
+}
+
+.contenedorProyecto {
+  display: flex;
+  width: 60%;
+}
+
+.textoProyecto {
+  color: rgb(40, 105, 46);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}
+
+.tituloProyecto {
+  color: rgb(40, 105, 46);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  margin-top: 140px;
+}
+
+.textoHabilidad {
+  color:rgb(168, 226, 93);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+}
+
+.tituloHabilidad {
+  color: rgb(255, 248, 225);
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+}
+
+.semiTituloHabilidad{
+  color:rgb(255, 248, 225);
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  text-align: center;
+}
+
+.LinkProyecto img:first-child {
+  display: flex;
+}
+
+.LinkProyecto img:last-child {
+  display: none;
+}
+
+.LinkProyecto:hover img:first-child {
+  display: none;
+}
+
+.LinkProyecto:hover img:last-child {
+  display: flex;
+}
+
+.presentacionTitulo {
+  color: rgb(19, 19, 19);
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+}
+
+.presentacionTexto {
+  color: rgb(40, 105, 46);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  text-align: center;
+}
+
+.presentacionImg {
+  margin-left: 200px;
+}
+
+.manoBarru {
+  margin-top: 380px;
+  width: 250px;
+  height: 200px;
+}
+
+.vidEmotiHabilidad{
+  margin-left: 50px;
+  width: 70%;
+}
