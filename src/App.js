@@ -2,6 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
 import Home from './pages/home';

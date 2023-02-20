@@ -5,7 +5,7 @@
 .falsoHeader {
   padding-left: 50px;
   padding-right: 80px;
-  background-color: #B2CF5F;
+  background-color: #a8cf5f;
   height: 80px;
   display: flex;
   justify-content: flex-end;
@@ -60,11 +60,6 @@ a.cabezal {
   text-decoration: none;
 }
 
-.cartaProyecto {
-  display: flex;
-  justify-content: center;
-}
-
 .cartaTitulo {
   display: flex;
   justify-content: center;
@@ -74,7 +69,7 @@ a.cabezal {
 }
 
 .cartaDibu {
-  margin-top: -300px;
+  margin-top: -42vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -97,41 +92,43 @@ a.cabezal {
 }
 
 .presentacionImg {
-  width: 320px;
+  width: 40%;
 }
 
 .manoBarru {
-  margin-top: 450px;
-  width: 250px;
-  height: 200px;
+  margin-top: 50vh;
+  width: 20%;
 }
 
+
 .contHabilidades {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -47px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  padding-top: 70px;
-  background-color: rgb(168, 226, 93);
-  border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -7.1vh;
+    padding-top: 70px;
+    background-color: #a8cf5f;
 }
 
 .cartaHabilidad {
   border-radius: 15px;
-  background-color: rgb(75 51 85);
+  background-color: rgb(72 52 80);
   width: 40%;
   margin: 20px;
-  margin-top: -27px;
-  padding: 20px 30px 20px 30px;
-  position:relative;
+  padding: 2% 5% 2% 5%;
+  display: flex;
   z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartaProyecto {
+  background-color: #b2b2b2;
 }
 
 .contenedorProyecto {
   display: flex;
-  width: 60%;
+  width: 80%;
 }
 
 .textoProyecto {
@@ -184,8 +181,8 @@ a.cabezal {
 }
 
 .vidEmotiHabilidad {
-  margin-left: 50px;
-  width: 70%;
+  width: 100%;
+  margin-bottom: 5vh;
 }
 
 .closed {

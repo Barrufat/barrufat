@@ -113,8 +113,23 @@ const Home = () => {
           <p className='textoHabilidad'>BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
         </div>
       </div>
+      <img src='./cambiobarrufat.png' alt='cambio1' with='100%'/>
 
       <div className='cartaProyecto'>
+        <div className='contenedorProyecto'>
+          <img width='500px' src='./biblio1.png' alt='biblio1' onClick={openModal1} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+        </div>
         <div className='contenedorProyecto'>
           <img width='500px' src='./biblio1.png' alt='biblio1' onClick={openModal1} />
           <Modal estado={modal1} cambiarEstado={openModal1}>
