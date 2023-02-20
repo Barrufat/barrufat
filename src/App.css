@@ -5,45 +5,54 @@
 .falsoHeader {
   padding-left: 50px;
   padding-right: 80px;
-  background-color: rgb(168, 226, 93);
-  height: 100px;
+  background-color: #B2CF5F;
+  height: 80px;
   display: flex;
-  justify-content:flex-end;
-  border-bottom: solid 2px black;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-header{
-  position:fixed;
+header {
+  position: fixed;
+  z-index: 3;
+}
+
+.jeto{
+  position: fixed;
+  z-index: 3;
 }
 
 main {
-  background-color: rgb(255, 248, 225);
+  background-color: white;
 }
-.cabezalBarru1{
-  margin-left:30px;
-  margin-top:40px;
-  width:40%;
+
+.cabezalBarru1 {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 50%;
+  position: relative;
+  z-index: 2;
 }
+
 .cabezal {
-  margin-bottom: 0px;
   padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  font-family: 'Courier New', Courier, monospace;
   margin-left: 30px;
 }
 
+.carousel-control-prev {
+  left: 0;
+  display:none !important;
+}
+
+.carousel-control-next {
+  right: 0;
+  display: none !important;
+}
+
 .cabezal:hover {
-  margin-bottom: 0px;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
   color: rgb(228, 136, 31);
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+  margin-left: 30px;
 }
 
 a.cabezal {
@@ -57,32 +66,67 @@ a.cabezal {
 }
 
 .cartaTitulo {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.cartaDibu {
+  margin-top: -300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.presentacionTitulo {
+  margin-top: 10px;
+  color: rgb(19, 19, 19);
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+}
+
+.presentacionTexto {
+  color: rgb(87, 87, 87);
+  font-weight: 400;
+  font-size:large;
+  text-align: center;
+}
+
+.presentacionImg {
+  width: 320px;
+}
+
+.manoBarru {
+  margin-top: 450px;
+  width: 250px;
+  height: 200px;
 }
 
 .contHabilidades {
-  display:flex;
-  justify-content:space-around;
+  display: flex;
+  justify-content: space-around;
   margin-top: -47px;
-  margin-left:10px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 50px;
   padding-top: 70px;
   background-color: rgb(168, 226, 93);
-  border-radius: 50px;
-
+  border-radius: 30px;
 }
 
-.cartaHabilidad{
-  border-radius: 30px;
-  background-color: rgb(71, 52, 83);
+.cartaHabilidad {
+  border-radius: 15px;
+  background-color: rgb(75 51 85);
   width: 40%;
   margin: 20px;
   margin-top: -27px;
   padding: 20px 30px 20px 30px;
+  position:relative;
+  z-index: 2;
 }
 
 .contenedorProyecto {
@@ -93,38 +137,32 @@ a.cabezal {
 .textoProyecto {
   color: rgb(40, 105, 46);
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
   font-size: medium;
 }
 
 .tituloProyecto {
   color: rgb(40, 105, 46);
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
   font-size: large;
-  margin-top: 140px;
 }
 
 .textoHabilidad {
-  color:rgb(168, 226, 93);
+  color: rgb(168, 226, 93);
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
   font-size: medium;
   text-align: center;
 }
 
 .tituloHabilidad {
-  color: rgb(255, 248, 225);
+  color: white;
   font-weight: bolder;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
   text-align: center;
 }
 
-.semiTituloHabilidad{
-  color:rgb(255, 248, 225);
+.semiTituloHabilidad {
+  color: white;
   font-weight: bolder;
-  font-family: 'Courier New', Courier, monospace;
   font-size: larger;
   text-align: center;
 }
@@ -145,33 +183,21 @@ a.cabezal {
   display: flex;
 }
 
-.presentacionTitulo {
-  color: rgb(19, 19, 19);
-  font-weight: bolder;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
-  text-align: center;
-}
-
-.presentacionTexto {
-  color: rgb(40, 105, 46);
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  text-align: center;
-}
-
-.presentacionImg {
-  margin-left: 200px;
-}
-
-.manoBarru {
-  margin-top: 380px;
-  width: 250px;
-  height: 200px;
-}
-
-.vidEmotiHabilidad{
+.vidEmotiHabilidad {
   margin-left: 50px;
   width: 70%;
+}
+
+.closed {
+  display: none;
+}
+
+.openModal {
+  position: fixed;
+}
+
+.carHome {
+  position: relative;
+  z-index: 1;
+
 }

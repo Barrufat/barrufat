@@ -1,0 +1,58 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    z-index: 3;
+}
+
+.contModal {
+    width: 50%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.headerModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tituloModal {
+    color: rgb(40, 105, 46);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+
+button.cerrarModal {
+    width: 30px;
+    height: 30px;
+    border:none;
+    background: rgb(255, 255, 255);
+    cursor:pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    color: rgb(40, 105, 46);
+    top:20px;
+    right:20px;
+}
+
+button.cerrarModal:hover{
+    background-color: #e4e4e4;
+}
+
+.contContenido{
+    display:flex;
+}

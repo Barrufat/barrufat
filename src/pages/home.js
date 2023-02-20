@@ -3,6 +3,8 @@ import React, { useRef, useState, useEffect } from "react";
 import useVideoPlayer from '../componentes/videoPlayer';
 import useVideoPlayer2 from "../componentes/videoPlayer2";
 import useVideoPlayer3 from "../componentes/videoPlayer3";
+import Modal from "../componentes/modal";
+import CarouselHome from "../componentes/carousel";
 import '../App.css';
 
 const Home = () => {
@@ -38,14 +40,24 @@ const Home = () => {
     // toggleMute,
   } = useVideoPlayer3(videoElement3);
 
+  const [modal1, setModal1] = useState(false);
+
+  const openModal1 = () => {
+    setModal1(!modal1)
+  }
+
   return (
     <div>
-      <div className='cartaProyecto'>
+      <div className='carHome'>
+        <CarouselHome />
+      </div>
+
+      <div className='cartaDibu'>
         <img className='manoBarru' src='./manoIzkBarru.png' alt='manoIzkTITULO'></img>
         <div className='cartaTitulo'>
           <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO' width='40%'></img>
           <h1 className='presentacionTitulo'>Diseñador & Desarrollador Web Full Stack</h1>
-          <h2 className='presentacionTexto'>Es frequente que tu sitio web sea la primera impresión que tus clientes van a recibir, así que asegurate de que esta se buena. Me gusta ayudar a pequeñas empresas a crear su espacio en la red y disfruto desarrollando pequeñas aplicaciones e interactivos. Hecha un vistazo a algunos de los proyectos que he realizado y si crees que te puede interesar... ¡Mándame un email!</h2>
+          <h2 className='presentacionTexto'>Es frequente que tu sitio Web sea la primera impresión que reciben tus clientes, así que asegurate de que esta sea buena. Me gusta ayudar a pequeñas empresas a crear su espacio en la red y disfruto desarrollando pequeñas aplicaciones e interactivos. Hecha un vistazo a algunos de los proyectos que he realizado y si crees que te puede interesar... ¡Mándame un email!</h2>
         </div>
         <img className='manoBarru' src='./manoDerBarru.png' alt='manoDerTITULO'></img>
       </div>
@@ -104,15 +116,18 @@ const Home = () => {
 
       <div className='cartaProyecto'>
         <div className='contenedorProyecto'>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
-            <img width='500px' src='./biblio1.png' alt='biblio1' />
-            <img width='500px' src='./H_biblio1.png' alt='biblio1' />
-          </a>
-          <div>
-            <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+          <img width='500px' src='./biblio1.png' alt='biblio1' onClick={openModal1} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
             <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
               guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
-          </div>
+          </Modal>
         </div>
       </div>
     </div>
