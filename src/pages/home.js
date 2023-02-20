@@ -113,7 +113,7 @@ const Home = () => {
           <p className='textoHabilidad'>BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
         </div>
       </div>
-      <img src='./cambiobarrufat.png' alt='cambio1' with='100%'/>
+      <img className='imgCambioSeccion' src='./cambiobarrufat.png' alt='cambio1'/>
 
       <div className='cartaProyecto'>
         <div className='contenedorProyecto'>

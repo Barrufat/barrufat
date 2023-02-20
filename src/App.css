@@ -122,27 +122,6 @@ a.cabezal {
   flex-direction: column;
 }
 
-.cartaProyecto {
-  background-color: #b2b2b2;
-}
-
-.contenedorProyecto {
-  display: flex;
-  width: 80%;
-}
-
-.textoProyecto {
-  color: rgb(40, 105, 46);
-  font-weight: bold;
-  font-size: medium;
-}
-
-.tituloProyecto {
-  color: rgb(40, 105, 46);
-  font-weight: bold;
-  font-size: large;
-}
-
 .textoHabilidad {
   color: rgb(168, 226, 93);
   font-weight: bold;
@@ -162,6 +141,31 @@ a.cabezal {
   font-weight: bolder;
   font-size: larger;
   text-align: center;
+}
+
+.imgCambioSeccion{
+  width:100%;
+}
+
+.cartaProyecto {
+  background-color: #b2b2b2;
+}
+
+.contenedorProyecto {
+  display: flex;
+  width: 80%;
+}
+
+.textoProyecto {
+  color: rgb(40, 105, 46);
+  font-weight: bold;
+  font-size: medium;
+}
+
+.tituloProyecto {
+  color: rgb(40, 105, 46);
+  font-weight: bold;
+  font-size: large;
 }
 
 .LinkProyecto img:first-child {
