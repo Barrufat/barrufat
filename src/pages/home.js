@@ -1,11 +1,15 @@
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import useVideoPlayer from '../componentes/videoPlayer';
 import useVideoPlayer2 from "../componentes/videoPlayer2";
 import useVideoPlayer3 from "../componentes/videoPlayer3";
 import Modal from "../componentes/modal";
 import CarouselHome from "../componentes/carousel";
+import CarouselHomeRes from "../componentes/carouselRes";
+import useMediaQuery from "../componentes/useMediaQuery";
 import '../App.css';
+
+import { Row, Col } from 'react-bootstrap';
 
 const Home = () => {
 
@@ -46,74 +50,80 @@ const Home = () => {
     setModal1(!modal1)
   }
 
+  const matches = useMediaQuery("(min-width: 600px)");
+
   return (
     <div>
-      <div className='carHome'>
-        <CarouselHome />
-      </div>
+
+      <div>{matches ? <CarouselHome /> : <CarouselHomeRes />}</div>
 
       <div className='cartaDibu'>
-        <img className='manoBarru' src='./manoIzkBarru.png' alt='manoIzkTITULO'></img>
         <div className='cartaTitulo'>
           <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO' width='40%'></img>
           <h1 className='presentacionTitulo'>Diseñador & Desarrollador Web Full Stack</h1>
           <h2 className='presentacionTexto'>Es frequente que tu sitio Web sea la primera impresión que reciben tus clientes, así que asegurate de que esta sea buena. Me gusta ayudar a pequeñas empresas a crear su espacio en la red y disfruto desarrollando pequeñas aplicaciones e interactivos. Hecha un vistazo a algunos de los proyectos que he realizado y si crees que te puede interesar... ¡Mándame un email!</h2>
         </div>
-        <img className='manoBarru' src='./manoDerBarru.png' alt='manoDerTITULO'></img>
+        <img className='manoBarru' src='./manosBarru.png' alt='manosBarru'></img>
       </div>
 
-      <div className='contHabilidades'>
-        <div className='cartaHabilidad'>
-          <video className='vidEmotiHabilidad'
-            onMouseEnter={togglePlay}
-            onMouseLeave={togglePlay}
-            src='./disenyador.mp4'
-            ref={videoElement}
-            onTimeUpdate={handleOnTimeUpdate}
-          />
+      <Row className='contHabilidades'>
+        <Col className='colHabilidad' sm={12} xl={4}>
+          <div className='cartaHabilidad'>
+            <video className='vidEmotiHabilidad'
+              onMouseEnter={togglePlay}
+              onMouseLeave={togglePlay}
+              src='./disenyador.mp4'
+              ref={videoElement}
+              onTimeUpdate={handleOnTimeUpdate}
+            />
 
-          <h1 className='tituloHabilidad'> Diseñador</h1>
-          <p className='textoHabilidad'>Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.</p>
-          <h2 className='semiTituloHabilidad'> Que me gusta diseñar</h2>
-          <p className='textoHabilidad'> Logos, Paginas Web, App, Experiencia e Interfaz Usurario</p>
-          <h2 className='semiTituloHabilidad'> Herramientas que uso: </h2>
-          <p className='textoHabilidad'> Paquete Adobe, Sketcher, Papel y Lapiz</p>
-        </div>
+            <h1 className='tituloHabilidad'> Diseñador</h1>
+            <p className='textoHabilidad'>Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.</p>
+            <h2 className='semiTituloHabilidad'> Que me gusta diseñar</h2>
+            <p className='textoHabilidad'> Logos, Paginas Web, App, Experiencia e Interfaz Usurario</p>
+            <h2 className='semiTituloHabilidad'> Herramientas que uso: </h2>
+            <p className='textoHabilidad'> Paquete Adobe, Sketcher, Papel y Lapiz</p>
+          </div>
+        </Col>
 
-        <div className='cartaHabilidad'>
-          <video className='vidEmotiHabilidad'
-            onMouseEnter={togglePlay2}
-            onMouseLeave={togglePlay2}
-            src='./developer.mp4'
-            ref={videoElement2}
-            onTimeUpdate={handleOnTimeUpdate2}
-          />
-          <h1 className='tituloHabilidad'> Frontend y Backend Developer</h1>
-          <p className='textoHabilidad'>Me gusta picar codigo desde zero e ir dando forma a las ideas hasta conseguir el mejor resultado para cada cliente.</p>
-          <h2 className='semiTituloHabilidad'> Lenguajes y tecnologías que uso:</h2>
-          <p className='textoHabilidad'>React, JavaScript, HTML, CSS, NodeJs, Sequelize, Git</p>
-          <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
-          <p className='textoHabilidad'>WordPress, BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
-        </div>
+        <Col className='colHabilidad' sm={12} xl={4}>
+          <div className='cartaHabilidad'>
+            <video className='vidEmotiHabilidad'
+              onMouseEnter={togglePlay2}
+              onMouseLeave={togglePlay2}
+              src='./developer.mp4'
+              ref={videoElement2}
+              onTimeUpdate={handleOnTimeUpdate2}
+            />
+            <h1 className='tituloHabilidad'> Frontend y Backend Developer</h1>
+            <p className='textoHabilidad'>Me gusta picar codigo desde zero e ir dando forma a las ideas hasta conseguir el mejor resultado para cada cliente.</p>
+            <h2 className='semiTituloHabilidad'> Lenguajes y tecnologías que uso:</h2>
+            <p className='textoHabilidad'>React, JavaScript, HTML, CSS, NodeJs, Sequelize, Git</p>
+            <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
+            <p className='textoHabilidad'>WordPress, BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
+          </div>
+        </Col>
 
-        <div className='cartaHabilidad'>
-          <video className='vidEmotiHabilidad'
-            onMouseEnter={togglePlay3}
-            onMouseLeave={togglePlay3}
-            src='./animator.mp4'
-            ref={videoElement3}
-            onTimeUpdate={handleOnTimeUpdate3}
-          />
+        <Col className='colHabilidad' sm={12} xl={4}>
+          <div className='cartaHabilidad'>
+            <video className='vidEmotiHabilidad'
+              onMouseEnter={togglePlay3}
+              onMouseLeave={togglePlay3}
+              src='./animator.mp4'
+              ref={videoElement3}
+              onTimeUpdate={handleOnTimeUpdate3}
+            />
 
-          <h1 className='tituloHabilidad'> Animador 2D</h1>
-          <p className='textoHabilidad'> Disfruto creando pequeñas animaciones 2D ya sea para añidar más carácter a las Aplicaciones que desarrollo como también para publicidad, pequeños sketches, videos musicales... lo que sea!</p>
-          <h2 className='semiTituloHabilidad'> Herramientas: </h2>
-          <p className='textoHabilidad'> Adobe Photoshop, Animate y Premiere, Blender y 3Ds Max </p>
-          <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
-          <p className='textoHabilidad'>BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
-        </div>
-      </div>
-      <img className='imgCambioSeccion' src='./cambiobarrufat.png' alt='cambio1'/>
+            <h1 className='tituloHabilidad'> Animador 2D</h1>
+            <p className='textoHabilidad'> Disfruto creando animaciones 2D ya sea para añidar más carácter a las Aplicaciones que desarrollo como también para publicidad, pequeños sketches, videos musicales... lo que sea!</p>
+            <h2 className='semiTituloHabilidad'> Herramientas: </h2>
+            <p className='textoHabilidad'> Adobe Photoshop, Animate y Premiere, Blender y 3Ds Max </p>
+            <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
+            <p className='textoHabilidad'>BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
+          </div>
+        </Col>
+      </Row>
+      <img className='imgCambioSeccion' src='./cambiobarrufat.png' alt='cambio1' />
 
       <div className='cartaProyecto'>
         <div className='contenedorProyecto'>

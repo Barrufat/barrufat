@@ -27,16 +27,23 @@ main {
 }
 
 .cabezalBarru1 {
-  margin-left: 30px;
-  margin-top: 20px;
-  width: 50%;
-  position: relative;
+  margin-top: 10px;
+  margin-left: 25px;
+  z-index: 2;
+  position: fixed;
+  width: 30%
+}
+
+.cabezalBarruRes{
+  margin-top: 10px;
+  margin-left: 25px;
   z-index: 2;
 }
 
 .cabezal {
   padding: 5px;
   margin-left: 30px;
+  font-family: 'Gajraj One', cursive;
 }
 
 .carousel-control-prev {
@@ -49,10 +56,15 @@ main {
   display: none !important;
 }
 
+.carousel-indicators {
+  display:none !important;
+}
+
 .cabezal:hover {
   color: rgb(228, 136, 31);
   padding: 5px;
   margin-left: 30px;
+  font-family: 'Gajraj One', cursive;
 }
 
 a.cabezal {
@@ -62,18 +74,16 @@ a.cabezal {
 
 .cartaTitulo {
   display: flex;
+  width:100%;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-}
-
-.cartaDibu {
-  margin-top: -42vh;
-  display: flex;
-  justify-content: center;
+  margin-top: -20%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .presentacionTitulo {
@@ -96,32 +106,28 @@ a.cabezal {
 }
 
 .manoBarru {
-  margin-top: 50vh;
-  width: 20%;
+  width: 100%;
 }
 
 
 .contHabilidades {
-  display: flex;
   justify-content: space-around;
-  margin-top: -7.1vh;
-  padding-top: 5vh;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-bottom: 10vh;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #a8cf5f;
 }
 
 .cartaHabilidad {
   border-radius: 15px;
   background-color: rgb(72 52 80);
-  width: 40%;
-  margin: 20px;
   padding: 2% 5% 2% 5%;
   display: flex;
-  z-index: 2;
+  height: 95%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 5vh;
 }
 
 .textoHabilidad {
@@ -197,10 +203,4 @@ a.cabezal {
 
 .openModal {
   position: fixed;
-}
-
-.carHome {
-  position: relative;
-  z-index: 1;
-
 }
