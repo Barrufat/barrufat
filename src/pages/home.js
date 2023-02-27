@@ -1,8 +1,9 @@
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import useVideoPlayer from '../componentes/videoPlayer';
 import useVideoPlayer2 from "../componentes/videoPlayer2";
 import useVideoPlayer3 from "../componentes/videoPlayer3";
+import useVideoPlayer4 from "../componentes/videoPlayer4";
 import Modal from "../componentes/modal";
 import CarouselHome from "../componentes/carousel";
 import CarouselHomeRes from "../componentes/carouselRes";
@@ -16,6 +17,7 @@ const Home = () => {
   const videoElement = useRef(null);
   const videoElement2 = useRef(null);
   const videoElement3 = useRef(null);
+  const videoElement4 = useRef(null);
 
   const {
     // playerState,
@@ -44,15 +46,38 @@ const Home = () => {
     // toggleMute,
   } = useVideoPlayer3(videoElement3);
 
+  const {
+    playerState4,
+    togglePlay4,
+    handleOnTimeUpdate4,
+    // handleVideoProgress4,
+  } = useVideoPlayer4(videoElement4);
+
   const [modal1, setModal1] = useState(false);
-  const [play4, setPlay4] = useState(false);
+  const [displayGadjet, setDisplayGadjet] = useState('closed');
+
+  const openGadjet = () => {
+    setDisplayGadjet('gadjetOpen')
+    togglePlay4();
+  }
 
   const openModal1 = () => {
     setModal1(!modal1);
-    setPlay4(true);
   }
 
+  console.log(playerState4.progress)
+
+  useEffect(() => {
+    if (playerState4.progress === 100) {
+      setDisplayGadjet('closed');
+      setModal1(true);
+      togglePlay4()
+    }
+  }, [playerState4, togglePlay4, modal1]);
+
+
   const matches = useMediaQuery("(min-width: 600px)");
+
 
   return (
     <div>
@@ -127,41 +152,102 @@ const Home = () => {
           </div>
         </Col>
       </Row>
+
       <img className='imgCambioSeccion' src='./cambiobarrufat.png' alt='cambio1' />
 
       <div className='cartaProyecto'>
 
         <h2 className='presentacionTexto'>Hecha un vistazo a algunos de los proyectos que he realizado y si crees que te puede interesar... ¡Mándame un email!</h2>
 
+        <div className={displayGadjet}>
+          <video width='80%'
+            src='./gadjet.mp4'
+            ref={videoElement4}
+            onTimeUpdate={handleOnTimeUpdate4}
+          />
+        </div>
+
         <div className='gridProyectos'>
-          <div>
-            <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openModal1} />
-            <Modal estado={modal1} cambiarEstado={openModal1} play4={play4} >
-              <div>
-                <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
-                <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
-                  <img width='250px' src='./biblio1.png' alt='biblio1' />
-                  <img width='250px' src='./H_biblio1.png' alt='biblio1' />
-                </a>
-              </div>
-              <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
-                guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
-            </Modal>
-          </div>
-          <div>
-            <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openModal1} />
-            <Modal estado={modal1} cambiarEstado={openModal1} play4={play4}>
-              <div>
-                <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
-                <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
-                  <img width='250px' src='./biblio1.png' alt='biblio1' />
-                  <img width='250px' src='./H_biblio1.png' alt='biblio1' />
-                </a>
-              </div>
-              <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
-                guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
-            </Modal>
-          </div>
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1} >
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
+          <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openGadjet} />
+          <Modal estado={modal1} cambiarEstado={openModal1}>
+            <div>
+              <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA:</h1>
+              <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+                <img width='250px' src='./biblio1.png' alt='biblio1' />
+                <img width='250px' src='./H_biblio1.png' alt='biblio1' />
+              </a>
+            </div>
+            <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+              guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          </Modal>
+
         </div>
       </div>
     </div>

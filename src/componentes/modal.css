@@ -12,16 +12,9 @@
     z-index: 3;
 }
 
-.gadjetOpen{
-    display:flex;
-}
-
 .contModal {
     width: 50%;
-    min-height: 100px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: url(/public/gadjet.png);
     padding: 20px;
 }
 
@@ -55,12 +48,4 @@ button.cerrarModal {
 
 button.cerrarModal:hover{
     background-color: #e4e4e4;
-}
-
-.contContenido{
-    display:flex;
-}
-
-.closed{
-    display:none;
 }

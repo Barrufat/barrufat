@@ -168,14 +168,28 @@ a.cabezal {
 .cartaProyecto {
   background-color: #b2b2b2;
   width: 100%;
-  padding: 10px 10% 0px 10%;
+}
+
+.gadjetOpen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    z-index: 3;
 }
 
 .gridProyectos {
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
   gap: 20px;
-  padding: 20px;
+  justify-items: center;
+  justify-content: center;
 }
 
 .textoProyecto {
@@ -185,12 +199,11 @@ a.cabezal {
 }
 
 .imgProyecto{
-  width:90%;
-  margin-top:10%;
+  width: 90%;
 }
 
 .imgProyecto:hover{
-  width:100%;
+  transform: scale3d(1.05, 1.05, 1);
 }
 
 .tituloProyecto {
