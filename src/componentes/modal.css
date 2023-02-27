@@ -12,6 +12,10 @@
     z-index: 3;
 }
 
+.gadjetOpen{
+    display:flex;
+}
+
 .contModal {
     width: 50%;
     min-height: 100px;
@@ -55,4 +59,8 @@ button.cerrarModal:hover{
 
 .contContenido{
     display:flex;
+}
+
+.closed{
+    display:none;
 }

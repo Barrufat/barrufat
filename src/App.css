@@ -86,23 +86,30 @@ a.cabezal {
   padding-right: 8%;
 }
 
+.contTextoPresentacion{
+  margin-left:10%;
+  margin-right:10%;
+}
+
 .presentacionTitulo {
   margin-top: 10px;
   color: rgb(19, 19, 19);
   font-weight: bolder;
   font-size: 25px;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .presentacionTexto {
   color: rgb(87, 87, 87);
-  font-weight: 400;
-  font-size:large;
+  font-weight:200;
+  font-size: 12px;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .presentacionImg {
-  width: 40%;
+  width: 30%;
 }
 
 .manoBarru {
@@ -133,22 +140,25 @@ a.cabezal {
 .textoHabilidad {
   color: rgb(168, 226, 93);
   font-weight: bold;
-  font-size: medium;
+  font-size: 12px;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .tituloHabilidad {
   color: white;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .semiTituloHabilidad {
   color: white;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 15px;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .imgCambioSeccion{
@@ -157,17 +167,30 @@ a.cabezal {
 
 .cartaProyecto {
   background-color: #b2b2b2;
+  width: 100%;
+  padding: 10px 10% 0px 10%;
 }
 
-.contenedorProyecto {
-  display: flex;
-  width: 80%;
+.gridProyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  gap: 20px;
+  padding: 20px;
 }
 
 .textoProyecto {
   color: rgb(40, 105, 46);
   font-weight: bold;
   font-size: medium;
+}
+
+.imgProyecto{
+  width:90%;
+  margin-top:10%;
+}
+
+.imgProyecto:hover{
+  width:100%;
 }
 
 .tituloProyecto {
@@ -193,8 +216,8 @@ a.cabezal {
 }
 
 .vidEmotiHabilidad {
-  width: 100%;
-  margin-bottom: 5vh;
+  width: 80%;
+  margin-bottom: 2vh;
 }
 
 .closed {
