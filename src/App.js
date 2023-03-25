@@ -26,11 +26,11 @@ function App() {
       </div>
       <Router>
         <header> {matches ?
-          <Link to="/"><img className="cabezalBarru1" src='./logo1barru.png' 
-          alt='logo' width='300px' onClick={JetOff} /></Link>
+          <Link to="/"><img className="cabezalBarru1" src='./logo1barru.png'
+            alt='logo' width='300px' onClick={JetOff} /></Link>
           :
-          <Link to="/"><img className="cabezalBarruRes" src='./logo1barru.png' 
-          alt='logo' width='300px' onClick={JetOff} /></Link>}
+          <Link to="/"><img className="cabezalBarruRes" src='./logo1barru.png'
+            alt='logo' width='300px' onClick={JetOff} /></Link>}
         </header>
         <main>
           <div>{matches ?
@@ -39,10 +39,19 @@ function App() {
               <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
               <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
             </div> :
-            <div className='falsoHeader' />}</div>
+            <div className='falsoHeader' />}
+          </div>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
+          <div>{matches ?
+            <div className='falsoFooter'>
+              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
+              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
+              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+            </div> :
+            <div className='falsoFooter' />}
+          </div>
         </main>
       </Router>
     </div>

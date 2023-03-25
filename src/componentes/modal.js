@@ -7,13 +7,16 @@ const Modal = ({ children, estado, cambiarEstado, play4 }) => {
             {estado &&
                 <div className='overlay'>
                     <div className='contModal'>
+                        <img src='./gadjet1.png' alt='gadjet1' width='100%' />
                         <div className='headerModal'>
-                            <h1 className='tituloModal'>Proyecto</h1>
                             <button className='cerrarModal' type='button' onClick={() => cambiarEstado(false)}>X</button>
                         </div>
-                        <div className='contContenido'>
-                            {children}
+                        <div className='fondoModal'>
+                            <div className='contContenido'>
+                                {children}
+                            </div>
                         </div>
+                        <img src='./gadjet2.png' alt='gadjet2' width='100%' />
                     </div>
                 </div>
             }
