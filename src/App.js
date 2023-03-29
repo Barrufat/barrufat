@@ -10,8 +10,21 @@ import Jeto from './componentes/jeto';
 import useMediaQuery from './componentes/useMediaQuery';
 
 function App() {
+
   const [toggleJeto, setToggleJeto] = useState(false);
+  const [displayMenu, setDisplayMenu] = useState('closed');
+  const [displayMenuRes, setDisplayMenuRes] = useState('closed');
   console.log('ToggleJeto: ' + toggleJeto);
+
+  const MenuOn = () => {
+    setDisplayMenu('openMenu');
+    setDisplayMenuRes('openMenuRes');
+  }
+
+  const MenuOff = () => {
+    setDisplayMenu('closed');
+    setDisplayMenuRes('closed');
+  }
 
   const JetOff = () => {
     setToggleJeto(true);
@@ -26,27 +39,38 @@ function App() {
       </div>
       <Router>
         <header> {matches ?
-          <Link to="/"><img className="cabezalBarru1" src='./logo1barru.png'
-            alt='logo' onClick={JetOff} /></Link>
+          <Link className="cabezalBarru1" to="/" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
+            <img className='cabezalImg'src='./logo1barru.png' alt='logo' onClick={JetOff} />
+            <div className={displayMenu}>
+              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
+              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
+              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+            </div>
+          </Link>
           :
-          <Link to="/"><img className="cabezalBarruRes" src='./logo1barru.png'
-            alt='logo' onClick={JetOff} /></Link>}
+          <Link className="cabezalBarruRes" to="/" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
+            <img className='cabezalImgRes' src='./logo1barru.png' alt='logo' onClick={JetOff} />
+            <div className={displayMenuRes}>
+              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
+              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
+              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+            </div>
+          </Link>}
+
+
         </header>
         <main>
           <div>{matches ?
             <div className='falsoHeader'>
-              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
-              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
-              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
-              <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub/></a>
-              <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin/></a>
+              <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+              <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
             </div> :
             <div className='falsoHeader' />}
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-          
+
         </main>
       </Router>
     </div>
