@@ -1,0 +1,132 @@
+
+.cartaProyecto {
+  background: linear-gradient(180deg, #b2b2b2 0%, #a8cf5f 100%);
+  width: 100%;
+}
+
+.gadjetOpen {
+    padding-left: 10%;
+    padding-right:10%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.videoGadjet{
+  height:80%;
+  transition: height 2s;
+}
+
+.gridProyectos {
+  padding: 30px 20px 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.contPresProyectos{
+  display: flex;
+  padding: 20px 30px 20px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyectosTitulo {
+  padding-top: 20px;
+  color: rgb(72 52 80);
+  font-weight:lighter;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.proyectosTexto {
+  color: rgb(255, 255, 255);
+  font-weight:lighter;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.messageButton{
+  color: rgba(255, 255, 255);
+  font-weight:lighter;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+}
+
+.messageButton:hover{
+  color: rgb(72 52 80) ;
+}
+
+.tituloProyecto {
+  margin-top: 2rem;
+  color: rgb(19, 19, 19);
+  font-weight:lighter;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.textoProyecto {
+  color: rgb(87, 87, 87);
+  font-weight:lighter;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.imgProyecto{
+  width: 80%;
+  display:flex;
+  justify-content: center;
+}
+
+.imgProyecto:hover{
+  cursor:pointer;
+  transform: scale3d(1.10, 1.10, 1);
+  transition: all 1s;
+}
+
+.imgLink {
+  width: 80%;
+  margin: 4% 10% 4% 10%;
+  width: 80%;
+}
+
+.imgLink:hover{
+  cursor:pointer;
+  transform: scale3d(1.10, 1.10, 1);
+  transition: all 1s;
+}
+
+.LinkProyecto img {
+  display: flex;
+}
+
+.vidEmotiHabilidad {
+  width: 80%;
+  margin-bottom: 2vh;
+}
+
+.closed {
+  display: none;
+}
+
+.openModal {
+  position: fixed;
+}

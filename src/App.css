@@ -41,250 +41,41 @@ main {
   margin-left: 25px;
   z-index: 2;
   position: fixed;
-  width: 30%
+  width: 25%
 }
 
 .cabezalBarruRes{
   margin-top: 10px;
   margin-left: 25px;
   z-index: 2;
-}
-
-.cabezal {
-  padding: 5px;
-  margin-left: 30px;
-  font-family: 'Gajraj One', cursive;
-}
-
-.carousel-control-prev {
-  left: 0;
-  display:none !important;
-}
-
-.carousel-control-next {
-  right: 0;
-  display: none !important;
-}
-
-.carousel-indicators {
-  display:none !important;
-}
-
-.cabezal:hover {
-  color: rgb(228, 136, 31);
-  padding: 5px;
-  margin-left: 30px;
-  font-family: 'Gajraj One', cursive;
+  position: fixed;
+  width: 40%
 }
 
 a.cabezal {
   color: white;
   text-decoration: none;
+  padding: 5px;
+  margin-left: 30px;
+  font-family: 'Gajraj One', cursive;
 }
 
-.cartaTitulo {
-  display: flex;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  margin-top: -20%;
-  position: relative;
-  z-index: 1;
-  padding-left: 8%;
-  padding-right: 8%;
+.cabezal:hover {
+  color: rgb(228, 136, 31);
 }
 
-.contTextoPresentacion{
-  margin-left:10%;
-  margin-right:10%;
-}
-
-.presentacionTitulo {
-  margin-top: 10px;
-  color: rgb(19, 19, 19);
-  font-weight: bolder;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.presentacionTexto {
-  color: rgb(87, 87, 87);
-  font-weight:200;
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.presentacionImg {
-  width: 30%;
-}
-
-.manoBarru {
-  width: 100%;
-}
-
-.contHabilidades {
-  justify-content: space-around;
-  padding-bottom: 10vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #a8cf5f;
-}
-
-.cartaHabilidad {
-  border-radius: 15px;
-  background-color: rgb(72 52 80);
-  padding: 2% 5% 2% 5%;
-  display: flex;
-  height: 95%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5vh;
-}
-
-.textoHabilidad {
-  color: rgb(168, 226, 93);
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.tituloHabilidad {
+a.icono {
   color: white;
-  font-weight: bolder;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  padding-bottom: 15px;
+  margin-left: 30px;
+  font-size:x-large;
 }
 
-.semiTituloHabilidad {
-  color: white;
-  font-weight: bolder;
-  font-size: 15px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
+.icono:hover {
+  color: rgb(228, 136, 31);
 }
 
 .imgCambioSeccion{
   width:100%;
-}
-
-.cartaProyecto {
-  background-color: #b2b2b2;
-  width: 100%;
-}
-
-.gadjetOpen {
-    padding-left: 10%;
-    padding-right:10%;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(0, 0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-}
-
-.videoGadjet{
-  height:80%;
-  transition: height 2s;
-}
-
-.gridProyectos {
-  padding: 30px 20px 50px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  gap: 20px;
-  justify-items: center;
-  justify-content: center;
-}
-
-.contPresProyectos{
-  margin: 0% 15% 0% 15%;
-  padding: 5% 0 5% 0;
-}
-
-.proyectosTitulo {
-  padding-top: 20px;
-  color: rgb(255, 255, 255);
-  font-weight: bolder;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.proyectosTexto {
-  color: rgb(255, 255, 255);
-  font-weight:200;
-  font-size: 15px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  margin-bottom: 40px;
-}
-
-.tituloProyecto {
-  margin-top: 2rem;
-  color: rgb(19, 19, 19);
-  font-weight: bolder;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.textoProyecto {
-  color: rgb(87, 87, 87);
-  font-weight:200;
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.imgProyecto{
-  width: 80%;
-  display:flex;
-  justify-content: center;
-}
-
-.imgProyecto:hover{
-  cursor:pointer;
-  transform: scale3d(1.10, 1.10, 1);
-  transition: all 1s;
-}
-
-.imgLink {
-  width: 80%;
-  margin: 4% 10% 4% 10%;
-  width: 80%;
-}
-
-.imgLink:hover{
-  cursor:pointer;
-  transform: scale3d(1.10, 1.10, 1);
-  transition: all 1s;
-}
-
-.LinkProyecto img {
-  display: flex;
-}
-
-.vidEmotiHabilidad {
-  width: 80%;
-  margin-bottom: 2vh;
-}
-
-.closed {
-  display: none;
-}
-
-.openModal {
-  position: fixed;
 }

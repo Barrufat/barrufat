@@ -1,0 +1,45 @@
+
+  .cartaTitulo {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: -20%;
+    position: relative;
+    z-index: 1;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  .contTextoPresentacion{
+    margin-left:10%;
+    margin-right:10%;
+  }
+  
+  .presentacionTitulo {
+    margin-top: 10px;
+    color: rgb(19, 19, 19);
+    font-weight:lighter;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .presentacionTexto {
+    color: rgb(87, 87, 87);
+    font-weight:200;
+    font-size: 12px;
+    font-weight:lighter;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .presentacionImg {
+    width: 30%;
+  }
+  
+  .manoBarru {
+    width: 100%;
+  }

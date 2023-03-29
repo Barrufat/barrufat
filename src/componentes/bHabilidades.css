@@ -1,0 +1,46 @@
+
+.contHabilidades {
+  --bs-gutter-x: 0rem !important;
+  justify-content: space-around;
+  padding-bottom: 10vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #a8cf5f;
+}
+
+.cartaHabilidad {
+  margin: 0px 10px 0px 10px;
+  border-radius: 15px;
+  background-color: rgb(72 52 80);
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  height: 95%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.textoHabilidad {
+  color: rgb(168, 226, 93);
+  font-weight:lighter;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.tituloHabilidad {
+  color: white;
+  font-weight:lighter;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.semiTituloHabilidad {
+  color: white;
+  font-weight:lighter;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
