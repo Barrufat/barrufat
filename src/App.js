@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
@@ -27,10 +27,10 @@ function App() {
       <Router>
         <header> {matches ?
           <Link to="/"><img className="cabezalBarru1" src='./logo1barru.png'
-            alt='logo' width='300px' onClick={JetOff} /></Link>
+            alt='logo' onClick={JetOff} /></Link>
           :
           <Link to="/"><img className="cabezalBarruRes" src='./logo1barru.png'
-            alt='logo' width='300px' onClick={JetOff} /></Link>}
+            alt='logo' onClick={JetOff} /></Link>}
         </header>
         <main>
           <div>{matches ?
@@ -38,20 +38,15 @@ function App() {
               <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
               <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
               <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+              <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub/></a>
+              <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin/></a>
             </div> :
             <div className='falsoHeader' />}
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-          <div>{matches ?
-            <div className='falsoFooter'>
-              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
-              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
-              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
-            </div> :
-            <div className='falsoFooter' />}
-          </div>
+          
         </main>
       </Router>
     </div>
