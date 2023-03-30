@@ -64,7 +64,7 @@ const Proyectos = () => {
         <img className='imgProyecto' src='./cajaQuiz.png' alt='quiz' onClick={openModal1} />
         <Modal estado={modal1} cambiarEstado={cerrarModal1} >
           <h1 className='tituloProyecto'>QUIZ</h1>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+          <a className='LinkProyecto' href='https://plantquizz.web.app/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeQUIZ.png' alt='quiz' />
           </a>
           <p className='textoProyecto'> Interactivo educativo tipo questionario para museo en Abudabi</p>
@@ -83,7 +83,7 @@ const Proyectos = () => {
         <img className='imgProyecto' src='./cajaVLeave.png' alt='biblio1' onClick={openModal4} />
         <Modal estado={modal4} cambiarEstado={cerrarModal4} >
           <h1 className='tituloProyecto'>VLeave</h1>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+          <a className='LinkProyecto' href='https://v-leave.web.app' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeVLeave.png' alt='biblio1' />
           </a>
           <p className='textoProyecto'> E-commerce de mobiliario para Campers que incluye modelador virtual 3D donde el usuario puede diseñar y organizar el producto segun sus necesidades antes de su compra. </p>
@@ -92,7 +92,7 @@ const Proyectos = () => {
         <img className='imgProyecto' src='./cajaMuseum.png' alt='museum' onClick={openModal3} />
         <Modal estado={modal3} cambiarEstado={cerrarModal3}>
           <h1 className='tituloProyecto'>The Museum</h1>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+          <a className='LinkProyecto' href='https://themuseumtour.web.app/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
           </a>
           <p className='textoProyecto'> Tour 360 en espacio 3D virtual generado a tiempo real. </p>
