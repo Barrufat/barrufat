@@ -15,24 +15,53 @@
   
   .contTextoPresentacion{
     margin-top:50px;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:5%;
+    margin-right:5%;
     margin-bottom: 20px;
   }
-  
+
+  .contTitulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .presentacionTitulo {
+    margin-left: 20px;
+    display:flex;
     color: rgb(19, 19, 19);
     font-weight:lighter;
     font-size: 60px;
     text-align: center;
     font-family: 'Gajraj One', cursive;
   }
+
+  .letraNaranja:hover {
+    cursor:pointer;
+    color: rgb(228, 136, 31);
+    transform: scale3d(1.10, 2.20, 1);
+    transition: all .5s;
+  }
+
+  .letraVioleta:hover {
+    cursor:pointer;
+    color: rgb(72 52 80);
+    transform: scale3d(1.10, 2.30, 1);
+    transition: all .5s;
+  }
+
+  .letraVerde:hover {
+    cursor:pointer;
+    color: rgb(168, 226, 93);
+    transform: scale3d(1.10, 2.40, 1);
+    transition: all .5s;
+  }
   
   .presentacionTexto {
     margin-top:20px;
     color: rgb(87, 87, 87);
     font-weight:200;
-    font-size: 12px;
+    font-size: 15px;
     font-weight:lighter;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
