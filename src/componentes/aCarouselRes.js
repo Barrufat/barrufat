@@ -4,7 +4,7 @@ import './aCarousel.css'
 
 const CarouselHomeRes = () => {
   return (
-    <Carousel fade>
+    <Carousel fade id='carouselRes' interval="1000" >
       <Carousel.Item>
         <img
           className="d-block w-100"

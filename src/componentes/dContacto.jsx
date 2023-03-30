@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import useMediaQuery from './useMediaQuery';
 import './dContacto.css'
 
 export const ContactUs = () => {
@@ -16,31 +17,62 @@ export const ContactUs = () => {
             });
     };
 
-    return (
-        <div className='contContacto'>
-            <img className='imgCambioSeccion' src='./cambiobarrufat2.png' alt='cambio2' />
-            <div className='contPresProyectos'>
-                <h1 className='contactoTitulo'>Contacta conmigo</h1>
-                <h2 className='contactoTexto '>Cuentáme tu idea para empezar a crear algo especial!</h2>
-            </div>
-            <div className='contForm'>
-                <form className='contForm2' ref={form} onSubmit={sendEmail}>
-                    <div className='datosForm'>
-                        <div className='contDatos'>
-                            <label className='labelForm'>Nombre</label>
-                            <input className='inputForm' type="text" name="user_name" />
-                        </div>
-                        <div>
-                            <label className='labelForm'>Email</label>
-                            <input className='inputForm' type="email" name="user_email" />
-                        </div>
-                    </div>
+    const matches = useMediaQuery("(min-width: 800px)");
 
-                    <textarea className='textForm' name="message" placeholder='Escribe aquí tu mensaje' />
-                    <input className='sendForm' type="submit" value="Enviar" />
-                </form>
+    return (
+        <>{matches ?
+            <div className='contContacto' id='contacto'>
+                <img className='imgCambioSeccion' src='./cambiobarrufat2.png' alt='cambio2' />
+                <div className='contPresProyectos'>
+                    <h1 className='contactoTitulo'>Contacta conmigo</h1>
+                    <h2 className='contactoTexto '>Cuentáme tu idea para empezar a crear algo especial!</h2>
+                </div>
+                <div className='contForm'>
+                    <form className='contForm2' ref={form} onSubmit={sendEmail}>
+                        <div className='datosForm'>
+                            <div className='contDatos'>
+                                <label className='labelForm'>Nombre</label>
+                                <input className='inputForm' type="text" name="user_name" />
+                            </div>
+                            <div>
+                                <label className='labelForm'>Email</label>
+                                <input className='inputForm' type="email" name="user_email" />
+                            </div>
+                        </div>
+
+                        <textarea className='textForm' name="message" placeholder='Escribe aquí tu mensaje' />
+                        <input className='sendForm' type="submit" value="ENVIAR" />
+                    </form>
+                </div>
+                <img className='imgCambioSeccion' src='./footerBarru.png' alt='cambioFooter' />
             </div>
-            <img className='imgCambioSeccion' src='./footerBarru.png' alt='cambioFooter' />
-        </div>
+            :
+            <div className='contContacto' id='contacto'>
+                <img className='imgCambioSeccion' src='./cambiobarrufat2.png' alt='cambio2' />
+                <div className='contPresProyectos'>
+                    <h1 className='contactoTitulo'>Contacta conmigo</h1>
+                    <h2 className='contactoTexto '>Cuentáme tu idea para empezar a crear algo especial!</h2>
+                </div>
+                <div className='contForm'>
+                    <form className='contForm2' ref={form} onSubmit={sendEmail}>
+                        <div className='datosFormRes'>
+                            <div className='contDatos'>
+                                <label className='labelForm'>Nombre</label>
+                                <input className='inputForm' type="text" name="user_name" />
+                            </div>
+                            <div>
+                                <label className='labelForm'>Email</label>
+                                <input className='inputForm' type="email" name="user_email" />
+                            </div>
+                        </div>
+
+                        <textarea className='textForm' name="message" placeholder='Escribe aquí tu mensaje' />
+                        <input className='sendForm' type="submit" value="ENVIAR" />
+                    </form>
+                </div>
+                <img className='imgCambioSeccion' src='./footerBarru.png' alt='cambioFooter' />
+            </div>
+        }
+        </>
     );
 };

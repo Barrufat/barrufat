@@ -1,10 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
-import {CarouselIndicators} from 'react-bootstrap';
 import './aCarousel.css'
 
 const CarouselHome = () => {
   return (
-    <Carousel fade>
+    <Carousel fade id='carousel' interval="1000" >
       <Carousel.Item>
         <img
           className="d-block w-100"

@@ -5,6 +5,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 import Home from './pages/home';
 import Jeto from './componentes/jeto';
 import useMediaQuery from './componentes/useMediaQuery';
@@ -39,33 +40,31 @@ function App() {
       </div>
       <Router>
         <header> {matches ?
-          <Link className="cabezalBarru1" to="/" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-            <img className='cabezalImg'src='./logo1barru.png' alt='logo' onClick={JetOff} />
+          <Link className="cabezalBarru1" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
+            <HashLink className="cabezalLogo" to="#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
             <div className={displayMenu}>
-              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
-              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
-              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+              <HashLink className="cabezal" to="#sobreMi" smooth><h4>SOBRE MI</h4></HashLink>
+              <HashLink className="cabezal" to="#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
+              <HashLink className="cabezal" to="#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
+              <HashLink className="cabezal" to="#contacto" smooth><h4>CONTACTO</h4></HashLink>
             </div>
           </Link>
           :
           <Link className="cabezalBarruRes" to="/" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-            <img className='cabezalImgRes' src='./logo1barru.png' alt='logo' onClick={JetOff} />
+          <HashLink className="cabezalLogoRes" to="#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
             <div className={displayMenuRes}>
-              <Link className="cabezal" to="/"><h4>SOBRE MI</h4></Link>
-              <Link className="cabezal" to="/"><h4 >TECNOLOGÍAS</h4></Link>
-              <Link className="cabezal" to="/"><h4 >CONTACTO</h4></Link>
+              <HashLink className="cabezal" to="#sobreMi" smooth><h4>SOBRE MI</h4></HashLink>
+              <HashLink className="cabezal" to="#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
+              <HashLink className="cabezal" to="#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
+              <HashLink className="cabezal" to="#contacto" smooth><h4 >CONTACTO</h4></HashLink>
             </div>
           </Link>}
 
-
         </header>
         <main>
-          <div>{matches ?
-            <div className='falsoHeader'>
-              <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
-              <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
-            </div> :
-            <div className='falsoHeader' />}
+          <div className='falsoHeader' id='header'>
+            <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+            <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
           </div>
           <Routes>
             <Route path="/" element={<Home />} />

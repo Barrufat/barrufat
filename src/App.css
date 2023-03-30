@@ -3,53 +3,67 @@
 }
 
 .cabezalBarru1 {
+  width:25%;
   margin-top: 10px;
   margin-left: 25px;
   z-index: 2;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cabezalBarruRes{
+  width:50%;
   margin-top: 10px;
   margin-left: 25px;
   z-index: 2;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabezalLogo{
+  z-index: 3;
+}
+
+.cabezalLogoRes{
+  z-index: 3;
 }
 
 .cabezalImg{
-  width: 80%;
+  width: 100%;
 }
 
 .cabezalImgRes{
-  width: 60%;
+  width: 100%;
 }
 
 .openMenu{
-  padding-top: 100px;
-  padding-bottom: 10px;
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: -100px;
-  margin-left: 20px;
-  background-color: #a8cf5f;
-  border: solid 3px black;
-  border-radius: 65px;
-  width: 72%;
-}
-
-.openMenuRes{
   padding-top: 90px;
   padding-bottom: 10px;
   display:flex;
   align-items: center;
   flex-direction: column;
-  margin-top: -90px;
-  margin-left: 12px;
-  background-color: #a8cf5f;
-  border: solid 2px black;
+  margin-top: -85px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 10%, rgba(228, 136, 31, 0.767) 40% ,rgb(255, 255, 255) 100%);
+  border: solid 2px rgba(0, 0, 0, 0.50);
+  border-radius: 65px;
+  width: 90%;
+}
+
+.openMenuRes{
+  padding-top: 75px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -70px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 10%, #a8cf5fc0 40% ,rgb(255, 255, 255) 100%);
+  border: solid 2px rgba(0, 0, 0, 0.50);
   border-radius: 50px;
-  width: 55%;
+  width: 90%;
 }
 
 .closed{
@@ -91,12 +105,12 @@ main {
 }
 
 a.cabezal {
-  color: white;
+  color: #000000;
   font-family: 'Gajraj One', cursive;
 }
 
 .cabezal:hover {
-  color: rgb(228, 136, 31);
+  color: rgb(121, 68, 7);
 }
 
 a.icono {
@@ -114,3 +128,4 @@ a.icono {
 .imgCambioSeccion{
   width:100%;
 }
+

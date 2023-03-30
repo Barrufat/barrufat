@@ -65,7 +65,11 @@ const Habilidades = () => {
 
 
   return (
-    <Row className='contHabilidades'>
+    <Row className='contHabilidades' id='habilidades'>
+      <div className='contPresHabilidades'>
+        <h1 className='habilidadesTitulo'>Habilidades</h1>
+        {/* <h2 className='contactoTexto '></h2> */}
+      </div>
       <Col className='colHabilidad' sm={12} xl={4}>
         <div className='cartaHabilidad'>
           <video className='vidEmotiHabilidad'

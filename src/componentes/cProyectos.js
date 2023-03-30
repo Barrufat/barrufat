@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 import Modal from "./modal";
 import './cProyectos.css'
 
@@ -51,11 +52,12 @@ const Proyectos = () => {
   }
 
   return (
-    <div className='cartaProyecto'>
+    <div className='cartaProyecto' id='proyectos'>
       <div className='contPresProyectos'>
         <h1 className='proyectosTitulo'>Portfolio</h1>
         <h2 className='proyectosTexto '>Hecha un vistazo a algunos de los proyectos que he realizado y si quieres...</h2>
-        <button className='messageButton'> Mándame un e-mail</button>
+        {/* <button className='messageButton'> Mándame un e-mail</button> */}
+        <HashLink className='messageButton' to="#contacto" smooth>Mándame un e-mail</HashLink>
       </div>
 
       <div className='gridProyectos'>
