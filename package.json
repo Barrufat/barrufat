@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@react-three/drei": "^9.62.4",
+    "@react-three/drei": "^9.63.0",
     "@react-three/fiber": "^8.12.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,6 +19,7 @@
     "react-router-dom": "^6.4.5",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "three": "^0.151.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
