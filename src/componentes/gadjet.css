@@ -1,0 +1,26 @@
+.canvas{
+    margin-top: 100px;
+    display: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+div.containerGadjet {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+  }
+
+.closedGadjet {
+    display: none;
+  }
+
+video.open {
+ position: relative;
+ display: fixed;
+ margin: 0 auto;
+ width: 100%;
+}

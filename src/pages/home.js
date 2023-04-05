@@ -1,6 +1,4 @@
 
-import React, { useRef, useState } from "react";
-
 import CarouselHome from "../componentes/aCarousel";
 import CarouselHomeRes from "../componentes/aCarouselRes";
 import Presentacion from "../componentes/aPresentacion";
@@ -21,13 +19,13 @@ const Home = () => {
 
       <div>{matches ? <CarouselHome /> : <CarouselHomeRes />}</div>
 
-      <Presentacion/>
+      <Presentacion />
 
-      <Habilidades/>
+      <Habilidades />
 
       <img className='imgCambioSeccion' src='./cambiobarrufat.png' alt='cambio1' />
 
-      <Proyectos/>
+      <Proyectos />
 
       <ContactUs />
 

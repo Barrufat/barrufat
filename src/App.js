@@ -7,8 +7,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
 import Home from './pages/home';
-import Jeto from './componentes/jeto';
+// import Jeto from './componentes/jeto';
 import useMediaQuery from './componentes/useMediaQuery';
+import Gadjet from './componentes/Gadjet';
 
 function App() {
 
@@ -35,8 +36,8 @@ function App() {
 
   return (
     <div>
-      <div className='jeto'>
-        <Jeto toggleJeto={toggleJeto} />
+      <div className='gadjet'>
+        <Gadjet toggleJeto={toggleJeto} />
       </div>
       <Router>
         <header> {matches ?

@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .cabezalBarru1 {
   width:25%;
   margin-top: 10px;
@@ -47,7 +46,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: -85px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 10%, rgba(228, 136, 31, 0.767) 40% ,rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 10%, #e48921c4 40% ,rgb(255, 255, 255) 100%);
   border: solid 2px rgba(0, 0, 0);
   border-radius: 65px;
   width: 90%;
@@ -94,8 +93,9 @@ header {
   z-index: 3;
 }
 
-.jeto{
-  position: fixed;
+.gadjet{
+  position:fixed;
+  width:100%;
   z-index: 3;
 }
 
