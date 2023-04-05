@@ -1,6 +1,7 @@
 import './jeto.css'
-import React, { useRef, useState, useEffect } from "react";
 import useVideoPlayer from './videoPlayer';
+import { Suspense, useEffect, useRef, useState } from 'react'
+
 //What script should be run before every deploy? npm run build
 
 const Jeto = ({ toggleJeto }) => {
@@ -85,7 +86,7 @@ const Jeto = ({ toggleJeto }) => {
         }
     }, [src, playerState])
 
-    {/* <img className="titulo" src="./TITULO.png" alt="TIT" /> */ }
+
 
     return (
         <div className={displayJeto}>
@@ -141,7 +142,9 @@ const Jeto = ({ toggleJeto }) => {
                     <img src='./JetoTITULO.png' alt='JetoTITULO' width='200px' /> hasta que encuentres su punto débil y se vaya!</h1>
             </div>
         </div>
+        
     )
+
 }
 
 export default Jeto;
