@@ -10,7 +10,6 @@ const Habilidades = () => {
   const videoElement = useRef(null);
   const videoElement2 = useRef(null);
   const videoElement3 = useRef(null);
-  // const videoElement4 = useRef(null);
 
   const {
     // playerState,
@@ -38,30 +37,6 @@ const Habilidades = () => {
     // handleVideoSpeed,
     // toggleMute,
   } = useVideoPlayer3(videoElement3);
-
-  // const {
-  //   playerState4,
-  //   togglePlay4,
-  //   handleOnTimeUpdate4,
-  //   // handleVideoProgress4,
-  // } = useVideoPlayer4(videoElement4);
-
-  // const [displayGadjet, setDisplayGadjet] = useState('closed');
-
-  // const openGadjet = () => {
-  //   setDisplayGadjet('gadjetOpen')
-  //   togglePlay4();
-  // }
-
-  // console.log(playerState4.progress)
-
-  // useEffect(() => {
-  //   if (playerState4.progress === 100) {
-  //     setDisplayGadjet('closed');
-  //     setModal1(true);
-  //     togglePlay4()
-  //   }
-  // }, [playerState4, togglePlay4, modal1]);
 
 
   return (
