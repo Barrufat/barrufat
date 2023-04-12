@@ -92,7 +92,7 @@ const Proyectos = () => {
         <img className='imgProyecto' src='./cajaBiblio.png' alt='biblio' onClick={openModal6} />
         <Modal estado={modal6} cambiarEstado={cerrarModal6}>
           <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA</h1>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+          <a className='LinkProyecto' href='https://barberobib.firebaseapp.com/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
           </a>
           <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
