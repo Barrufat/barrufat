@@ -4,7 +4,10 @@ const Presentacion = () => {
     return (
         <div className='cartaDibu' id='presentacion'>
             <div className='cartaTitulo'>
-                <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO'></img>
+                <div className="casilla">
+                    <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO'></img>
+                    <img className='presentacionImg' src='./emojiBarru2.png' alt='jetoTITULO2'></img>
+                </div>
                 <div className='contTextoPresentacion'>
                     <div className='contTitulo'>
                         <div className='presentacionTitulo'>

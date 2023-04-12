@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
@@ -64,6 +64,7 @@ function App() {
         </header>
         <main>
           <div className='falsoHeader' id='header'>
+          <a className='icono' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
             <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
             <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
           </div>

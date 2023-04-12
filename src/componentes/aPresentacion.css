@@ -12,6 +12,28 @@
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  .casilla {
+display:flex;
+justify-content: center;
+    width: 100%;
+  }
+  
+  .casilla img:first-child {
+    display: flex;
+  }
+  
+  .casilla img:last-child {
+    display: none;
+  }
+  
+  .casilla:hover img:last-child {
+    display: flex;
+  }
+  
+  .casilla:hover img:first-child {
+    display: none;
+  }
   
   .contTextoPresentacion{
     margin-top:50px;

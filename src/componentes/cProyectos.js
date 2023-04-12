@@ -89,6 +89,16 @@ const Proyectos = () => {
           <p className='textoProyecto'> E-commerce de mobiliario para Campers que incluye modelador virtual 3D donde el usuario puede diseñar y organizar el producto segun sus necesidades antes de su compra. </p>
         </Modal>
 
+        <img className='imgProyecto' src='./cajaBiblio.png' alt='biblio' onClick={openModal6} />
+        <Modal estado={modal6} cambiarEstado={cerrarModal6}>
+          <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA</h1>
+          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
+            <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
+          </a>
+          <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
+            guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+        </Modal>
+
         <img className='imgProyecto' src='./cajaMuseum.png' alt='museum' onClick={openModal3} />
         <Modal estado={modal3} cambiarEstado={cerrarModal3}>
           <h1 className='tituloProyecto'>The Museum</h1>
@@ -107,15 +117,6 @@ const Proyectos = () => {
           <p className='textoProyecto'> E-Commerce para espacio creativo y taller de Serigrafía</p>
         </Modal>
 
-        <img className='imgProyecto' src='./biblio1.png' alt='biblio1' onClick={openModal6} />
-        <Modal estado={modal6} cambiarEstado={cerrarModal6}>
-          <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA</h1>
-          <a className='LinkProyecto' href='https://barberobib.web.app/' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
-          </a>
-          <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
-            guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
-        </Modal>
       </div>
     </div>
   );
