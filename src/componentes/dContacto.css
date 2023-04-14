@@ -106,3 +106,31 @@
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
+
+.contIconos{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../../public/footerBarru.png);
+    height:400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+a.iconoContacto {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.iconoContacto:hover {
+    color: rgb(87, 87, 87);
+    cursor:pointer;
+    transform: scale3d(1.10, 1.10, 1);
+    transition: all 0.5s;
+}
+
+/* img.falsoFooter {
+    margin-top: -110px;
+    width:100%;
+}    */

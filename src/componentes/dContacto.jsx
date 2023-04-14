@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import useMediaQuery from './useMediaQuery';
+import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import './dContacto.css'
 
 export const ContactUs = () => {
@@ -44,9 +45,16 @@ export const ContactUs = () => {
                         <input className='sendForm' type="submit" value="ENVIAR" />
                     </form>
                 </div>
-                <img className='imgCambioSeccion' src='./footerBarru.png' alt='cambioFooter' />
+                <div className='contIconos'>
+                    <a className='iconoContacto' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
+                    <a className='iconoContacto' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+                    <a className='iconoContacto' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+                </div>
+                {/* <img className='falsoFooter' src='./footerBarru.png' alt='cambioFooter' /> */}
             </div>
+
             :
+
             <div className='contContacto' id='contacto'>
                 <img className='imgCambioSeccion' src='./cambiobarrufat2.png' alt='cambio2' />
                 <div className='contPresProyectos'>
@@ -70,9 +78,15 @@ export const ContactUs = () => {
                         <input className='sendForm' type="submit" value="ENVIAR" />
                     </form>
                 </div>
-                <img className='imgCambioSeccion' src='./footerBarru.png' alt='cambioFooter' />
+                <div className='contIconos'>
+                    <a className='iconoContacto' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
+                    <a className='iconoContacto' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+                    <a className='iconoContacto' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+                </div>
+                {/* <img className='falsoFooter' src='./footerBarru.png' alt='cambioFooter' /> */}
             </div>
         }
+
         </>
     );
 };

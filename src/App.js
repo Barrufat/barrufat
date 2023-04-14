@@ -10,6 +10,7 @@ import Home from './pages/home';
 // import Jeto from './componentes/jeto';
 import useMediaQuery from './componentes/useMediaQuery';
 import Gadjet from './componentes/Gadjet';
+import SobreMi from './pages/sobreMi';
 
 function App() {
 
@@ -41,25 +42,25 @@ function App() {
       </div>
       <Router>
         <header> {matches ?
-          <Link className="cabezalBarru1" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-            <HashLink className="cabezalLogo" to="#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
+          <div className="cabezalBarru1" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
+            <HashLink className="cabezalLogo" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
             <div className={displayMenu}>
-              <HashLink className="cabezal" to="#sobreMi" smooth><h4>SOBRE MI</h4></HashLink>
-              <HashLink className="cabezal" to="#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
-              <HashLink className="cabezal" to="#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
-              <HashLink className="cabezal" to="#contacto" smooth><h4>CONTACTO</h4></HashLink>
+              <Link className="cabezal" to="/sobre" smooth><h4>SOBRE MI</h4></Link>
+              <HashLink className="cabezal" to="/#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
+              <HashLink className="cabezal" to="/#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
+              <HashLink className="cabezal" to="/#contacto" smooth><h4>CONTACTO</h4></HashLink>
             </div>
-          </Link>
+          </div>
           :
-          <Link className="cabezalBarruRes" to="/" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-          <HashLink className="cabezalLogoRes" to="#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
+          <div className="cabezalBarruRes" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
+          <HashLink className="cabezalLogoRes" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
             <div className={displayMenuRes}>
-              <HashLink className="cabezal" to="#sobreMi" smooth><h4>SOBRE MI</h4></HashLink>
-              <HashLink className="cabezal" to="#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
-              <HashLink className="cabezal" to="#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
-              <HashLink className="cabezal" to="#contacto" smooth><h4 >CONTACTO</h4></HashLink>
+            <Link className="cabezal" to="/sobre" smooth><h4>SOBRE MI</h4></Link>
+              <HashLink className="cabezal" to="/#habilidades" smooth><h4 >HABILIADES</h4></HashLink>
+              <HashLink className="cabezal" to="/#proyectos" smooth><h4 >PROYECTOS</h4></HashLink>
+              <HashLink className="cabezal" to="/#contacto" smooth><h4 >CONTACTO</h4></HashLink>
             </div>
-          </Link>}
+          </div>}
 
         </header>
         <main>
@@ -70,6 +71,7 @@ function App() {
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/sobre" element={<SobreMi/>} />
           </Routes>
 
         </main>

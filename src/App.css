@@ -78,16 +78,6 @@
   align-items: flex-end;
 }
 
-.falsoFooter {
-  padding-left: 50px;
-  padding-right: 80px;
-  background-color: #a8cf5f;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
 header {
   position: fixed;
   z-index: 3;
@@ -117,7 +107,7 @@ a.icono {
   text-decoration: none;
   padding-bottom: 15px;
   margin-left: 30px;
-  font-size:x-large;
+  font-size:xx-large;
 }
 
 .icono:hover {
@@ -126,5 +116,11 @@ a.icono {
 
 .imgCambioSeccion{
   width:100%;
+}
+
+.containerSobreMi{
+  background: linear-gradient(180deg, #a8cf5f 0%, rgb(72 52 80) 100%);
+  height:100vh;
+  width: 100%;
 }
 

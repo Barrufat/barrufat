@@ -1,13 +1,15 @@
 import './aPresentacion.css'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Presentacion = () => {
     return (
         <div className='cartaDibu' id='presentacion'>
             <div className='cartaTitulo'>
-                <div className="casilla">
+                <Link className="casilla" to="/sobre" smooth>
                     <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO'></img>
                     <img className='presentacionImg' src='./emojiBarru2.png' alt='jetoTITULO2'></img>
-                </div>
+                </Link>
+
                 <div className='contTextoPresentacion'>
                     <div className='contTitulo'>
                         <div className='presentacionTitulo'>
