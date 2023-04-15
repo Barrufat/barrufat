@@ -1,7 +1,11 @@
 import './aPresentacion.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Presentacion = () => {
+
+    const [t, i18n] = useTranslation("global");
+
     return (
         <div className='cartaDibu' id='presentacion'>
             <div className='cartaTitulo'>
@@ -53,7 +57,7 @@ const Presentacion = () => {
                             <div className='letraVioleta'>k</div>
                         </div>
                     </div>
-                    <h2 className='presentacionTexto'>Me gusta ayudar a empresas a crear su espacio en la red y disfruto desarrollando aplicaciones e interactivos. </h2>
+                    <h2 className='presentacionTexto'>{t("presentacion1")}</h2>
                 </div>
             </div>
             <img className='manoBarru' src='./manosBarru.png' alt='manosBarru'></img>

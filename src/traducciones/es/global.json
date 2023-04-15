@@ -1,0 +1,45 @@
+{
+  "apartado1": "SOBRE MI",
+  "apartado2": "HABILIDADES",
+  "apartado3": "PROYECTOS",
+  "apartado4": "CONTACTO",
+  "presentacion1" :"Me gusta ayudar a empresas a crear su espacio en la red y disfruto desarrollando aplicaciones e interactivos.",
+
+  "habilidades1" : "Habilidades",
+  "habilidades2": "Diseñador",
+  "habilidades3" : "Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.",
+  "habilidades4": "Que me gusta diseñar",
+  "habilidades5" : "Logos, Paginas Web, App, Experiencia e Interfaz Usurario",
+  "habilidades6" : "Herramientas que uso: ",
+  "habilidades7" : "Paquete Adobe, Sketcher, Papel y Lapiz",
+  "habilidades8" : "Frontend y Backend Developer",
+  "habilidades9" : "Me gusta picar codigo desde zero e ir dando forma a las ideas hasta conseguir el mejor resultado para cada cliente.",
+  "habilidades10" : "Lenguajes y tecnologías que uso:",
+  "habilidades11" : "React, JavaScript, HTML, CSS, NodeJs, Sequelize, Git",
+  "habilidades12" : "Herramientas y Frameworks:",
+  "habilidades13" : "WordPress, BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket",
+  "habilidades14" : "Animador 3D y 2D",
+  "habilidades15" : "Disfruto creando animaciones 2D ya sea para añidar más carácter a las Aplicaciones que desarrollo como también para publicidad, pequeños sketches, videos musicales... lo que sea!",
+  "habilidades16" : "Herramientas:",
+  "habilidades17" : "Adobe Photoshop, Animate y Premiere, Blender y 3Ds Max",
+  "habilidades18" : "Herramientas y Frameworks:",
+  "habilidades19" : "BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket",
+
+  "proyectos1" : "Hecha un vistazo a algunos de los proyectos que he realizado y si quieres...",
+  "proyectos2" : "Mándame un e-mail",
+  "proyectos3" : "Interactivo educativo tipo questionario para museo en Abudabi.",
+  "proyectos4" : "Pagina para proyecto ISE 2023 de DAIKIN.",
+  "proyectos5" : "E-commerce de mobiliario para Campers que incluye modelador virtual 3D donde el usuario puede diseñar y organizar el producto segun sus necesidades antes de su compra. ",
+  "proyectos6" : "Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros, guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc).",
+  "proyectos7" : "Tour 360 en espacio 3D virtual generado a tiempo real. ",
+  "proyectos8" : "E-Commerce para espacio creativo y taller de Serigrafía.",
+
+  "contacto1" : "Contacta conmigo",
+  "contacto2" : "Cuentáme tu idea para empezar a crear algo especial!",
+  "contacto3" : "Nombre",
+  "contacto4" : "Email",
+  "contacto5" : "ENVIAR",
+  "contacto6" : "Escribe aqui tu mensaje"
+
+
+}

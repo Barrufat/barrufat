@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { HashLink } from 'react-router-hash-link';
 import Modal from "./modal";
 import './cProyectos.css'
+import { useTranslation } from 'react-i18next';
 
 const Proyectos = () => {
 
@@ -11,6 +12,8 @@ const Proyectos = () => {
   const [modal4, setModal4] = useState(false);
   const [modal5, setModal5] = useState(false);
   const [modal6, setModal6] = useState(false);
+
+  const [t, i18n] = useTranslation("global");
 
 
   const openModal1 = () => {
@@ -55,9 +58,9 @@ const Proyectos = () => {
     <div className='cartaProyecto' id='proyectos'>
       <div className='contPresProyectos'>
         <h1 className='proyectosTitulo'>Portfolio</h1>
-        <h2 className='proyectosTexto '>Hecha un vistazo a algunos de los proyectos que he realizado y si quieres...</h2>
+        <h2 className='proyectosTexto '>{t("proyectos1")}</h2>
         {/* <button className='messageButton'> Mándame un e-mail</button> */}
-        <HashLink className='messageButton' to="#contacto" smooth>Mándame un e-mail</HashLink>
+        <HashLink className='messageButton' to="#contacto" smooth>{t("proyectos2")}</HashLink>
       </div>
 
       <div className='gridProyectos'>
@@ -67,7 +70,7 @@ const Proyectos = () => {
           <a className='LinkProyecto' href='https://plantquizz.web.app/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeQUIZ.png' alt='quiz' />
           </a>
-          <p className='textoProyecto'> Interactivo educativo tipo questionario para museo en Abudabi</p>
+          <p className='textoProyecto'>{t("proyectos3")}</p>
         </Modal>
 
 
@@ -77,7 +80,7 @@ const Proyectos = () => {
           <a className='LinkProyecto' href='https://daikinish23.com/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeDAIKIN.png' alt='daikin' />
           </a>
-          <p className='textoProyecto'> Pagina para proyecto ISE 2023 de DAIKIN</p>
+          <p className='textoProyecto'>{t("proyectos4")}</p>
         </Modal>
 
         <img className='imgProyecto' src='./cajaVLeave.png' alt='biblio1' onClick={openModal4} />
@@ -86,17 +89,16 @@ const Proyectos = () => {
           <a className='LinkProyecto' href='https://v-leave.web.app' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeVLeave.png' alt='biblio1' />
           </a>
-          <p className='textoProyecto'> E-commerce de mobiliario para Campers que incluye modelador virtual 3D donde el usuario puede diseñar y organizar el producto segun sus necesidades antes de su compra. </p>
+          <p className='textoProyecto'>{t("proyectos5")}</p>
         </Modal>
 
         <img className='imgProyecto' src='./cajaBiblio.png' alt='biblio' onClick={openModal6} />
         <Modal estado={modal6} cambiarEstado={cerrarModal6}>
-          <h1 className='tituloProyecto'>PROYECTO BIBLIOTECA INTERACTIVA</h1>
+          <h1 className='tituloProyecto'>INTEBIB</h1>
           <a className='LinkProyecto' href='https://barberobib.firebaseapp.com/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
           </a>
-          <p className='textoProyecto'> Donde el usuario puede administrar su biblioteca virtual, crear nuevos elementos, organizar por casilleros,
-            guardar información de cada elemento creado, etc. Incluye búsqueda y filtrado por diferentes campos (Título, autorx, etc)</p>
+          <p className='textoProyecto'>{t("proyectos6")}</p>
         </Modal>
 
         <img className='imgProyecto' src='./cajaMuseum.png' alt='museum' onClick={openModal3} />
@@ -105,7 +107,7 @@ const Proyectos = () => {
           <a className='LinkProyecto' href='https://themuseumtour.web.app/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
           </a>
-          <p className='textoProyecto'> Tour 360 en espacio 3D virtual generado a tiempo real. </p>
+          <p className='textoProyecto'>{t("proyectos7")}</p>
         </Modal>
 
         <img className='imgProyecto' src='./cajaGratx.png' alt='gratx' onClick={openModal5} />
@@ -114,7 +116,7 @@ const Proyectos = () => {
           <a className='LinkProyecto' href='https://elgratx.com/' target='_blank' rel="noreferrer" >
             <img className='imgLink' width='100%' src='./montajeGratx.png' alt='biblio1' />
           </a>
-          <p className='textoProyecto'> E-Commerce para espacio creativo y taller de Serigrafía</p>
+          <p className='textoProyecto'>{t("proyectos8")}</p>
         </Modal>
 
       </div>

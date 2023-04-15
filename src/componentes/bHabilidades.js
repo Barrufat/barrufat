@@ -3,6 +3,7 @@ import useVideoPlayer2 from "./videoPlayer2";
 import useVideoPlayer3 from "./videoPlayer3";
 import React, { useRef, useState } from "react";
 import { Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import './bHabilidades.css'
 
 const Habilidades = () => {
@@ -10,6 +11,8 @@ const Habilidades = () => {
   const videoElement = useRef(null);
   const videoElement2 = useRef(null);
   const videoElement3 = useRef(null);
+
+  const [t, i18n] = useTranslation("global");
 
   const {
     // playerState,
@@ -42,7 +45,7 @@ const Habilidades = () => {
   return (
     <Row className='contHabilidades' id='habilidades'>
       <div className='contPresHabilidades'>
-        <h1 className='habilidadesTitulo'>Habilidades</h1>
+        <h1 className='habilidadesTitulo'>{t("habilidades1")}</h1>
         {/* <h2 className='contactoTexto '></h2> */}
       </div>
       <Col className='colHabilidad' sm={12} xl={4}>
@@ -55,12 +58,12 @@ const Habilidades = () => {
             onTimeUpdate={handleOnTimeUpdate}
           />
 
-          <h1 className='tituloHabilidad'> Diseñador</h1>
-          <p className='textoHabilidad'>Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.</p>
-          <h2 className='semiTituloHabilidad'> Que me gusta diseñar</h2>
-          <p className='textoHabilidad'> Logos, Paginas Web, App, Experiencia e Interfaz Usurario</p>
-          <h2 className='semiTituloHabilidad'> Herramientas que uso: </h2>
-          <p className='textoHabilidad'> Paquete Adobe, Sketcher, Papel y Lapiz</p>
+          <h1 className='tituloHabilidad'>{t("habilidades2")}</h1>
+          <p className='textoHabilidad'>{t("habilidades3")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades4")}</h2>
+          <p className='textoHabilidad'>{t("habilidades5")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades6")}</h2>
+          <p className='textoHabilidad'>{t("habilidades7")}</p>
         </div>
       </Col>
 
@@ -73,12 +76,12 @@ const Habilidades = () => {
             ref={videoElement2}
             onTimeUpdate={handleOnTimeUpdate2}
           />
-          <h1 className='tituloHabilidad'> Frontend y Backend Developer</h1>
-          <p className='textoHabilidad'>Me gusta picar codigo desde zero e ir dando forma a las ideas hasta conseguir el mejor resultado para cada cliente.</p>
-          <h2 className='semiTituloHabilidad'> Lenguajes y tecnologías que uso:</h2>
-          <p className='textoHabilidad'>React, JavaScript, HTML, CSS, NodeJs, Sequelize, Git</p>
-          <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
-          <p className='textoHabilidad'>WordPress, BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
+          <h1 className='tituloHabilidad'>{t("habilidades8")}</h1>
+          <p className='textoHabilidad'>{t("habilidades9")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades10")}</h2>
+          <p className='textoHabilidad'>{t("habilidades11")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades12")}</h2>
+          <p className='textoHabilidad'>{t("habilidades13")}</p>
         </div>
       </Col>
 
@@ -92,12 +95,12 @@ const Habilidades = () => {
             onTimeUpdate={handleOnTimeUpdate3}
           />
 
-          <h1 className='tituloHabilidad'> Animador 2D</h1>
-          <p className='textoHabilidad'> Disfruto creando animaciones 2D ya sea para añidar más carácter a las Aplicaciones que desarrollo como también para publicidad, pequeños sketches, videos musicales... lo que sea!</p>
-          <h2 className='semiTituloHabilidad'> Herramientas: </h2>
-          <p className='textoHabilidad'> Adobe Photoshop, Animate y Premiere, Blender y 3Ds Max </p>
-          <h2 className='semiTituloHabilidad'> Herramientas y Frameworks: </h2>
-          <p className='textoHabilidad'>BootStrap, Three-Fiber, Three-Drei, Github, Bittbucket</p>
+          <h1 className='tituloHabilidad'>{t("habilidades14")}</h1>
+          <p className='textoHabilidad'>{t("habilidades15")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades16")}</h2>
+          <p className='textoHabilidad'>{t("habilidades17")}</p>
+          <h2 className='semiTituloHabilidad'>{t("habilidades18")}</h2>
+          <p className='textoHabilidad'>{t("habilidades19")}</p>
         </div>
       </Col>
     </Row>
