@@ -101,7 +101,7 @@ function App() {
           </div>}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<SobreMi />} />
+            <Route path="/sobre" element={<SobreMi/>} />
           </Routes>
 
         </main>
