@@ -1,10 +1,5 @@
-
-import CarouselHome from "../componentes/aCarousel";
-import CarouselHomeRes from "../componentes/aCarouselRes";
-import Presentacion from "../componentes/aPresentacion";
-
 import useMediaQuery from "../componentes/useMediaQuery";
-import { ContactUs } from "../componentes/dContacto";
+
 import '../App.css';
 
 
@@ -14,7 +9,7 @@ const SobreMi = () => {
 
   return (
     <div className='containerSobreMi'>
-
+      <img src='./Alex.png' alt='Alex' width='70%' />
     </div>
   )
 }
