@@ -50,10 +50,11 @@ export const ContactUs = () => {
                 </div>
                 <div className='contIconos'>
                     <a className='iconoContacto' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
-                    <a className='iconoContacto' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
                     <a className='iconoContacto' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+                    <a className='iconoContacto' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+
                 </div>
-                {/* <img className='falsoFooter' src='./footerBarru.png' alt='cambioFooter' /> */}
+                <img className='falsoFooter' src='./footerBarru.png' alt='cambioFooter' />
             </div>
 
             :
@@ -82,11 +83,12 @@ export const ContactUs = () => {
                     </form>
                 </div>
                 <div className='contIconos'>
-                    <a className='iconoContacto' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
-                    <a className='iconoContacto' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
-                    <a className='iconoContacto' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+                    <a className='iconoContactoRes' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
+                    <a className='iconoContactoRes' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+                    <a className='iconoContactoRes' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+
                 </div>
-                {/* <img className='falsoFooter' src='./footerBarru.png' alt='cambioFooter' /> */}
+                <img className='falsoFooterRes' src='./footerBarru.png' alt='cambioFooter' />
             </div>
         }
 

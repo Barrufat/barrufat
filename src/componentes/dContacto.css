@@ -110,17 +110,14 @@
 .contIconos{
     display: flex;
     justify-content: space-between;
-    background-image: url(../../public/footerBarru.png);
-    height:400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:auto;
 }
 
 a.iconoContacto {
     color: white;
     text-decoration: none;
+    margin: 100px 50px 0px 50px;
     font-size: 40px;
+    z-index: 3;
 }
 
 .iconoContacto:hover {
@@ -130,7 +127,27 @@ a.iconoContacto {
     transition: all 0.5s;
 }
 
-/* img.falsoFooter {
-    margin-top: -110px;
+a.iconoContactoRes {
+    color: white;
+    text-decoration: none;
+    margin: 50px 20px 10px 20px;
+    font-size: 25px;
+    z-index: 3;
+}
+
+.iconoContactoRes:hover {
+    color: rgb(87, 87, 87);
+    cursor:pointer;
+    transform: scale3d(1.10, 1.10, 1);
+    transition: all 0.5s;
+}
+
+img.falsoFooter {
+    margin-top: -130px;
     width:100%;
-}    */
+}   
+
+img.falsoFooterRes {
+    margin-top: -70px;
+    width:100%;
+}   

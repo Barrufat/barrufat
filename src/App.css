@@ -78,6 +78,14 @@
   align-items: flex-end;
 }
 
+.falsoHeaderRes {
+  padding-right: 15px;
+  background-color: #a8cf5f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 header {
   position: fixed;
   z-index: 3;
@@ -89,6 +97,14 @@ header {
   background-color: rgb(228, 136, 31);
   margin-left: 50px;
   margin-bottom: 20px;
+}
+
+.contLngRes{
+  border-radius: 30px;
+  border: solid 2px rgb(228, 136, 31);
+  background-color: rgb(228, 136, 31);
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .lngOff{
@@ -136,7 +152,21 @@ a.icono {
   font-size:xx-large;
 }
 
+
 .icono:hover {
+  color: rgb(228, 136, 31);
+}
+
+a.iconoRes {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 15px;
+  margin-left: 17px;
+  font-size: x-large;
+}
+
+
+.iconoRes:hover {
   color: rgb(228, 136, 31);
 }
 

@@ -58,8 +58,8 @@ function App() {
       </div>
       <Router>
         <header> {matches ?
-          <div className="cabezalBarru1" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-            <HashLink className="cabezalLogo" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
+          <div className="cabezalBarru1" onMouseEnter={MenuOn} onMouseLeave={MenuOff} onClick={JetOff} >
+            <HashLink className="cabezalLogo" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' /></HashLink>
             <div className={displayMenu}>
               <Link className="cabezal" to="/sobre" smooth><h4>{t("apartado1")}</h4></Link>
               <HashLink className="cabezal" to="/#habilidades" smooth><h4 >{t("apartado2")}</h4></HashLink>
@@ -68,8 +68,8 @@ function App() {
             </div>
           </div>
           :
-          <div className="cabezalBarruRes" onMouseEnter={MenuOn} onMouseLeave={MenuOff} >
-            <HashLink className="cabezalLogoRes" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' onClick={JetOff} /></HashLink>
+          <div className="cabezalBarruRes" onMouseEnter={MenuOn} onMouseLeave={MenuOff} onClick={JetOff}>
+            <HashLink className="cabezalLogoRes" to="/#header" smooth><img className='cabezalImg' src='./logo1barru.png' alt='logo' /></HashLink>
             <div className={displayMenuRes}>
               <Link className="cabezal" to="/sobre" smooth><h4>{t("apartado1")}</h4></Link>
               <HashLink className="cabezal" to="/#habilidades" smooth><h4 >{t("apartado2")}</h4></HashLink>
@@ -79,7 +79,7 @@ function App() {
           </div>}
 
         </header>
-        <main>
+        <main> {matches ?
           <div className='falsoHeader' id='header'>
             <a className='icono' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
             <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
@@ -89,6 +89,16 @@ function App() {
               <button className={displayEN} onClick={ActivoEn}>EN</button>
             </div>
           </div>
+          :
+          <div className='falsoHeaderRes' id='header'>
+            <a className='iconoRes' href="https://www.freelancer.es/u/barrufat?from=search" target='_blank' rel="noreferrer"><SiFreelancer /></a>
+            <a className='iconoRes' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
+            <a className='iconoRes' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
+            <div className='contLngRes'>
+              <button className={displayES} onClick={ActivoEs}>ES</button>
+              <button className={displayEN} onClick={ActivoEn}>EN</button>
+            </div>
+          </div>}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<SobreMi />} />
