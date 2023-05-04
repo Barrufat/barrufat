@@ -11,8 +11,9 @@ import useVideoPlayer5 from "./videoPlayer5";
 
 import { Suspense, useEffect, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls,  AccumulativeShadows } from '@react-three/drei';
+import { OrbitControls, AccumulativeShadows } from '@react-three/drei';
 import Gadjet2 from '../componentes/BarruGadjet2';
+import AniBarru from './aniBarru';
 
 
 const Gadjet = ({ toggleJeto }) => {

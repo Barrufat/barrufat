@@ -36,8 +36,9 @@ function App() {
   const matches = useMediaQuery("(min-width: 800px)");
 
   const [t, i18n] = useTranslation("global");
-  const [displayES, setDisplayES] = useState('lngOn')
-  const [displayEN, setDisplayEN] = useState('lngOff')
+  const [displayEN, setDisplayEN] = useState('lngOn')
+  const [displayES, setDisplayES] = useState('lngOff')
+
 
   const ActivoEs = () => {
     setDisplayES('lngOn');
@@ -85,8 +86,8 @@ function App() {
             <a className='icono' href="https://github.com/Barrufat" target='_blank' rel="noreferrer"><SiGithub /></a>
             <a className='icono' href="https://www.linkedin.com/in/alex-barbero-arrufat/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
             <div className='contLng'>
+            <button className={displayEN} onClick={ActivoEn}>EN</button>
               <button className={displayES} onClick={ActivoEs}>ES</button>
-              <button className={displayEN} onClick={ActivoEn}>EN</button>
             </div>
           </div>
           :

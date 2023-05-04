@@ -1,18 +1,43 @@
 import './aPresentacion.css'
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import AniBarru from './aniBarru';
+
 
 const Presentacion = () => {
 
     const [t, i18n] = useTranslation("global");
+    // const [displayImg, setDisplayImg] = useState("presentacionImg");
+    // const [displayAni, setDisplayAni] = useState("closed");
+    // const [toggleAni, setToggleAni] = useState(false);
+
+    // const cambiarImg = () => {
+    //     setDisplayImg("closed");
+    //     setDisplayAni("presentacionAni");
+    //     setToggleAni(!toggleAni);
+    // }
+
+    // const cambiarAni = () => {
+    //     setDisplayImg("presentacionImg");
+    //     setDisplayAni("closed");
+    // }
 
     return (
         <div className='cartaDibu' id='presentacion'>
             <div className='cartaTitulo'>
-                <Link className="casilla" to="/sobre" smooth>
+                {/* <Link className="casilla" to="/sobre" smooth>
                     <img className='presentacionImg' src='./emojiBarru.png' alt='jetoTITULO'></img>
-                    <img className='presentacionImg' src='./emojiBarru2.png' alt='jetoTITULO2'></img>
-                </Link>
+                    <div className='presentacionAni'>
+                        <AniBarru />
+                    </div>
+                </Link> */}
+
+                <div className="contImgAni">
+                    <Link className="presentacionImg" to="/sobre">
+                        <AniBarru/>
+                    </Link>
+                </div>
 
                 <div className='contTextoPresentacion'>
                     <div className='contTitulo'>

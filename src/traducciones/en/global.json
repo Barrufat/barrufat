@@ -39,6 +39,9 @@
   "contacto3" : "Name",
   "contacto4" : "E-mail",
   "contacto5" : "SEND",
-  "contacto6" : "Write your message"
+  "contacto6" : "Write your message",
 
+  "sobremi1": "Hey! My name is Alex.",
+  "sobremi2": "I am a Web Designer and Full Stack Developer based in Barcelona.",
+  "sobremi3": "Coming from the world of building engineering in which I developed my design and creativity skills, I decided to change course and enter the web development sector looking for new experiences and challenges. I have worked on many projects as a Freelance, thus reaffirming my passion for this new world in which each project is different and enriching."
 }

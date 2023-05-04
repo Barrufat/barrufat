@@ -39,7 +39,11 @@
   "contacto3" : "Nombre",
   "contacto4" : "Email",
   "contacto5" : "ENVIAR",
-  "contacto6" : "Escribe aqui tu mensaje"
+  "contacto6" : "Escribe aqui tu mensaje",
+
+  "sobremi1" : "Hola! Me llamo Alex.",
+  "sobremi2" : "Soy un Diseñador y Desarrollador Web Full Stack de la provincia de Barcelona.",
+  "sobremi3" : "Proviniente del mundo de la ingenieria de la edificación en el que desarrollé mis capacidades de diseño y creatividad, decidi cambiar el rumbo y adentrarme en el sector del desarrollo web buscando nuevas experiencias y desafios. He trabajado en muchos proyectos como Freelance, refirmando así mi pasión por este mundo nuevo en el que cada proyecto es diferente y enriquecedor."
 
 
 }
