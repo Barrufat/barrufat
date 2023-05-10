@@ -105,7 +105,7 @@ const Proyectos = () => {
         <Modal estado={modal3} cambiarEstado={cerrarModal3}>
           <h1 className='tituloProyecto'>Barru Drop</h1>
           <a className='LinkProyecto' href='https://barrudrop.web.app/' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./montajeDrop.png' alt='barruDrop' />
+            <img className='imgLink' width='100%' src='./montajeDROP.png' alt='barruDrop' />
           </a>
           <p className='textoProyecto'>{t("proyectos7")}</p>
         </Modal>
