@@ -11,11 +11,23 @@ const SobreMi = () => {
 
   return (
     <div className='containerSobreMi'>
-      <img src='./Alex.png' alt='Alex' width='70%' />
-      <div className='contenidoSobreMI'>
-        <h1 className='tituloSobreMI'>{t("sobremi1")}<br/>{t("sobremi2")}</h1>
-        <h3 className='textoSobreMI'>{t("sobremi3")}</h3>
-      </div>
+      {matches ?
+        <>
+          <img src='./Alex.png' alt='Alex' width='70%' />
+          <div className='contenidoSobreMI'>
+            <h1 className='tituloSobreMI'>{t("sobremi1")}<br />{t("sobremi2")}</h1>
+            <h3 className='textoSobreMI'>{t("sobremi3")}</h3>
+          </div>
+        </>
+        :
+        <div className='containerSobreMiRes'>
+          <img className='imgSobreMIRes' src='./Alex.png' alt='Alex' width='70%' />
+          <div className='contenidoSobreMIRes'>
+            <h1 className='tituloSobreMIRes'>{t("sobremi1")}<br />{t("sobremi2")}</h1>
+            <h3 className='textoSobreMIRes'>{t("sobremi3")}</h3>
+          </div>
+        </div>
+      }
     </div>
   )
 }

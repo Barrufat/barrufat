@@ -183,7 +183,8 @@ a.iconoRes {
 
 .contenidoSobreMI{
   position: absolute;
-  margin: 80px 10% 60px 50%;
+  top: 25%;
+  left: 40%;
 }
 
 .tituloSobreMI{
@@ -202,5 +203,39 @@ a.iconoRes {
   font-size: 16px;
   margin: 20px;
   line-height: 25px;
+}
+
+.containerSobreMiRes{
+  display:flex;
+  width: 100%;
+}
+
+.contenidoSobreMIRes{
+  position: absolute;
+  top:15vh;
+}
+
+.tituloSobreMIRes{
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  margin: 20px;
+  line-height: 12px;
+}
+
+.imgSobreMIRes{
+position: absolute;
+margin-top: 20vh;
+width:100%;
+}
+
+
+.textoSobreMIRes{
+  color:rgb(39, 30, 43);
+  font-family: 'Press Start 2P', cursive;
+  font-weight:lighter;
+  font-size: 8px;
+  margin: 20px;
+  line-height: 12px;
 }
 
