@@ -87,7 +87,7 @@ const Proyectos = () => {
         <Modal estado={modal4} cambiarEstado={cerrarModal4} >
           <h1 className='tituloProyecto'>VLeave</h1>
           <a className='LinkProyecto' href='https://v-leave.web.app' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./montajeVLeave.png' alt='biblio1' />
+            <img className='imgLink' width='100%' src='./montajeVLeave.png' alt='vLeave' />
           </a>
           <p className='textoProyecto'>{t("proyectos5")}</p>
         </Modal>
@@ -96,16 +96,16 @@ const Proyectos = () => {
         <Modal estado={modal6} cambiarEstado={cerrarModal6}>
           <h1 className='tituloProyecto'>INTEBIB</h1>
           <a className='LinkProyecto' href='https://barberobib.firebaseapp.com/' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
+            <img className='imgLink' width='100%' src='./montajeBib.png' alt='inteBib' />
           </a>
           <p className='textoProyecto'>{t("proyectos6")}</p>
         </Modal>
 
         <img className='imgProyecto' src='./cajaMuseum.png' alt='museum' onClick={openModal3} />
         <Modal estado={modal3} cambiarEstado={cerrarModal3}>
-          <h1 className='tituloProyecto'>The Museum</h1>
-          <a className='LinkProyecto' href='https://themuseumtour.web.app/' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./biblio1.png' alt='biblio1' />
+          <h1 className='tituloProyecto'>Barru Drop</h1>
+          <a className='LinkProyecto' href='https://barrudrop.web.app/' target='_blank' rel="noreferrer" >
+            <img className='imgLink' width='100%' src='./montajeDrop.png' alt='barruDrop' />
           </a>
           <p className='textoProyecto'>{t("proyectos7")}</p>
         </Modal>
@@ -114,7 +114,7 @@ const Proyectos = () => {
         <Modal estado={modal5} cambiarEstado={cerrarModal5}>
           <h1 className='tituloProyecto'>El Gratx L'H</h1>
           <a className='LinkProyecto' href='https://elgratx.com/' target='_blank' rel="noreferrer" >
-            <img className='imgLink' width='100%' src='./montajeGratx.png' alt='biblio1' />
+            <img className='imgLink' width='100%' src='./montajeGratx.png' alt='Gratx' />
           </a>
           <p className='textoProyecto'>{t("proyectos8")}</p>
         </Modal>
